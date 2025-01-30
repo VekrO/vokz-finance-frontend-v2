@@ -1,0 +1,15 @@
+<div class="w-full h-screen flex items-center justify-center">
+    <form [formGroup]="form" class="flex flex-col bg-white w-[500px] mx-auto p-2 gap-2" (submit)="submit()">
+        <div>
+            <input onclick="this.select()" type="Nome" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all" placeholder="Nome da conta" formControlName="nome">
+        </div>
+        <div class="grid-cols-12 flex align-items-center gap-1 justify-end">
+            <input id="inativo" class="w-[20px] h-[20px] cursor-pointer" type="checkbox" formControlName="inativo">
+            <label for="inativo" class="text-xl cursor-pointer">Inativa</label>
+        </div>
+        <div class="flex gap-2">
+            <button type="button"  class="bg-slate-500 hover:bg-slate-600 transition-all h-[40px] w-full shadow rounded-[5px] text-white text-xl">Voltar</button>
+            <button type="submit"  class="bg-orange-500 hover:bg-orange-600 transition-all h-[40px] w-full shadow rounded-[5px] text-white text-xl">Confirmar</button>
+        </div>
+    </form>
+</div>

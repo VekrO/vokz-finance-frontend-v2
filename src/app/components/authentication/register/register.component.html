@@ -1,0 +1,36 @@
+<form class="h-screen mx-auto flex justify-center items-center">
+    
+    <div class="flex flex-col justify-between items-center h-[500px] bg-white p-5 rounded-lg">
+
+        <h1 class="text-3xl text-left w-full font-bold">Registre-se na plataforma</h1>
+
+        <div class="flex flex-col gap-3 w-[500px]">
+            <div class="flex flex-col gap-3">
+                <div>
+                    <input type="text" placeholder="Nome" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                </div>
+                <div>
+                    <input type="email" placeholder="E-mail" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                </div>
+                <div>
+                    <input type="password" placeholder="Senha" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirme a senha" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                </div>
+            </div>
+            <div class="my-5">
+                <p>Ao criar uma conta, você estará concordando com nossos Termos de Serviços e Políticas de Privacidade.</p>
+            </div>
+            <div>
+                <button type="button" class="bg-orange-500 hover:bg-orange-600 transition-all h-[40px] w-full shadow rounded-[5px] text-white text-xl">Confirmar</button>
+            </div>
+        </div>
+
+        <div>
+            <span class="text-orange-500 hover:text-orange-600 transition-all text-xl">Já tem uma conta ? <a class="underline text-xl" routerLink="/authentication/login">Fazer Login</a></span>
+        </div>
+
+    </div>
+    
+</form>
