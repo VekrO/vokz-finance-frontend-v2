@@ -1,4 +1,4 @@
-<form class="h-screen mx-auto flex justify-center items-center" (submit)="submit()">
+<form [formGroup]="form" class="h-screen mx-auto flex justify-center items-center" (submit)="submit()">
     
     <div class="flex flex-col justify-between items-center h-[500px] bg-white p-5 rounded-lg">
 
@@ -7,10 +7,10 @@
         <div class="flex flex-col gap-3 w-[500px]">
             <div class="flex flex-col gap-3">
                 <div>
-                    <input type="email" placeholder="E-mail" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                    <input type="email" placeholder="E-mail" formControlName="email" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
                 </div>
                 <div>
-                    <input type="password" placeholder="Senha" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
+                    <input type="password" placeholder="Senha" formControlName="senha" class="w-full h-[50px] border-2 rounded-[5px] px-[15px] text-xl outline-none focus:border-neutral-400 transition-all">
                 </div>
             </div>
             <div>
@@ -18,9 +18,9 @@
             </div>
         </div>
 
-        <a class="underline text-orange-500 hover:text-orange-600 transition-all text-xl" routerLink="/authentication/forgotPassword">Esqueceu a senha ?</a>
+        <a class="underline text-orange-500 hover:text-orange-600 transition-all text-xl" routerLink="/forgotPassword">Esqueceu a senha ?</a>
         
-        <a routerLink="/authentication/register" class="bg-white hover:bg-slate-100 transition-all w-full shadow rounded-[5px] text-xl flex items-center justify-center h-[40px]">Criar uma nova conta</a>
+        <a routerLink="/register" class="bg-white hover:bg-slate-100 transition-all w-full shadow rounded-[5px] text-xl flex items-center justify-center h-[40px]">Criar uma nova conta</a>
 
     </div>
     

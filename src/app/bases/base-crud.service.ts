@@ -3,11 +3,11 @@ import { Observable } from "rxjs";
 import { environment } from "../../environments/environment.development";
 import { IBaseService } from "./base-crud-service.interface";
 
-export class BaseService<T = any> implements IBaseService<T> {
+export class BaseCrudService<T = any> implements IBaseService<T> {
     
     endpoint: string = '';
 
-    constructor(private http: HttpClient) {}
+    constructor(public http: HttpClient) {}
 
     get(): Observable<T> {
         return this.http.get<T>(environment.API + this.endpoint + '/id');
